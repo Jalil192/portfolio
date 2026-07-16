@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jalil</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS local -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+    <nav class="navbar navbar-expand-md navbar-light py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="éléments/logo.avif" alt="Logo" width="42" height="42" class="me-2">
+                <span class="brand-name">Jalil Keddara</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-md-center text-center text-md-start">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projets</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Compétences</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-md-3 mt-3 mt-md-0">
+                        <button id="toggleDarkMode" class="dark-toggle" type="button">
+                            <span class="dark-toggle-icon">🌙</span>
+                            <span class="dark-toggle-text">Sombre</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <!-- Accueil -->
+    <section id="home">
+        <div class="intro">
+            <img src="éléments/avatar.avif" alt="Avatar de profil" class="profile-picture">
+            <h1>Bienvenue ! Je m'appelle Jalil Keddara</h1>
+            <p>
+                Diplômé d’une Licence Informatique à Sorbonne Université, j’intégrerai l’ESILV à la rentrée prochaine et je recherche une alternance de 24 		 	 mois dans le cadre du MSc Data Science & Intelligence Artificielle, ou de 36 mois dans le cadre du cursus ingénieur avec une spécialisation en Data & IA.
+            </p>
+            <a href="éléments/cv.pdf" target="_blank" download class="btn btn-primary">Télécharger mon CV</a>
+        </div>
+    </section>
+
+    <!-- Projets -->
+	<section id="projects" class="p-5">
+	    <div class="container">
+		<h2 class="text-center mb-4">Mes Projets</h2>
+
+		<div class="row g-4">
+
+		    <!-- Projet 1 : Braitenberg -->
+		    <div class="col-md-6 col-lg-4">
+		        <div class="card h-100">
+		            <img
+		                src="éléments/braitenberg.avif"
+		                class="img-fluid card-img-top"
+		                alt="Projet Braitenberg"
+		            >
+
+		            <div class="card-body">
+		                <h5 class="card-title">Braitenberg - IA & Jeux</h5>
+
+		                <p class="card-text">
+		                    Projet de robotique en Python autour de robots autonomes.
+		                    Implémentation de comportements Braitenberg et de subsomption
+		                    à partir de capteurs normalisés.
+		                </p>
+
+		                <a
+		                    href="https://github.com/Jalil192/braitenberg"
+		                    target="_blank"
+		                    rel="noopener noreferrer"
+		                    class="btn btn-primary"
+		                >
+		                    Voir le projet
+		                </a>
+		            </div>
+		        </div>
+		    </div>
+
+		    <!-- Projet 2 : Simulation CPU -->
+		    <div class="col-md-6 col-lg-4">
+		        <div class="card h-100">
+		            <img
+		                src="éléments/cpu.avif"
+		                class="img-fluid card-img-top"
+		                alt="Projet Simulation CPU"
+		            >
+
+		            <div class="card-body">
+		                <h5 class="card-title">Simulation CPU en C</h5>
+
+		                <p class="card-text">
+		                    Simulation d’un processeur basique en langage C avec registres,
+		                    mémoire segmentée, pile, parser assembleur et gestion dynamique
+		                    de la mémoire.
+		                </p>
+
+		                <a
+		                    href="https://github.com/Jalil192/cpu-simulation-c"
+		                    target="_blank"
+		                    rel="noopener noreferrer"
+		                    class="btn btn-primary"
+		                >
+		                    Voir le projet
+		                </a>
+		            </div>
+		        </div>
+		    </div>
+
+		    <!-- Projet 3 : Automates finis -->
+		    <div class="col-md-6 col-lg-4">
+		        <div class="card h-100">
+		            <img
+		                src="éléments/automates.avif"
+		                class="img-fluid card-img-top"
+		                alt="Projet Automates finis"
+		            >
+
+		            <div class="card-body">
+		                <h5 class="card-title">Automates finis en Python</h5>
+
+		                <p class="card-text">
+		                    Projet de mathématiques discrètes. Implémentation d’algorithmes
+		                    sur les automates finis : acceptation de mots, complétion,
+		                    déterminisation, complémentaire, union et intersection.
+		                </p>
+
+		                <a
+		                    href="https://github.com/Jalil192/lu2in005-automates-python"
+		                    target="_blank"
+		                    rel="noopener noreferrer"
+		                    class="btn btn-primary"
+		                >
+		                    Voir le projet
+		                </a>
+		            </div>
+		        </div>
+		    </div>
+
+		    <!-- Projet 4 : Notebooks Data Science -->
+		    <div class="col-md-6 col-lg-4">
+		        <div class="card h-100">
+		            <img
+		                src="éléments/notebook.avif"
+		                class="img-fluid card-img-top"
+		                alt="Projet Data Science"
+		            >
+
+		            <div class="card-body">
+		                <h5 class="card-title">Notebooks Data Science</h5>
+
+		                <p class="card-text">
+		                    Travaux pratiques de science des données en Python avec
+		                    Jupyter Notebook. Manipulation de données, visualisation,
+		                    expérimentation et apprentissage automatique.
+		                </p>
+
+		                <a
+		                    href="https://github.com/Jalil192/data-science-notebooks"
+		                    target="_blank"
+		                    rel="noopener noreferrer"
+		                    class="btn btn-primary"
+		                >
+		                    Voir le projet
+		                </a>
+		            </div>
+		        </div>
+		    </div>
+
+		    <!-- Projet 5 : Foraging IA & Jeux -->
+		    <div class="col-md-6 col-lg-4">
+		        <div class="card h-100">
+		            <img
+		                src="éléments/foraging.avif"
+		                class="img-fluid card-img-top"
+		                alt="Projet Foraging IA et Jeux"
+		            >
+
+		            <div class="card-body">
+		                <h5 class="card-title">Foraging - IA & Jeux</h5>
+
+		                <p class="card-text">
+		                    Simulation multi-agents compétitive de collecte de ressources.
+		                    Comparaison de stratégies comme uniforme, expert, coordination,
+		                    fictitious play et regret matching.
+		                </p>
+
+		                <a
+		                    href="https://github.com/Jalil192/foraging-ia-jeux"
+		                    target="_blank"
+		                    rel="noopener noreferrer"
+		                    class="btn btn-primary"
+		                >
+		                    Voir le projet
+		                </a>
+		            </div>
+		        </div>
+		    </div>
+
+		    <!-- Projet 6 : Gale-Shapley -->
+		    <div class="col-md-6 col-lg-4">
+		        <div class="card h-100">
+		            <img
+		                src="éléments/gs.avif"
+		                class="img-fluid card-img-top"
+		                alt="Projet Gale-Shapley"
+		            >
+
+		            <div class="card-body">
+		                <h5 class="card-title">Gale-Shapley - Affectation Master</h5>
+
+		                <p class="card-text">
+		                    Projet d’affectation étudiants/parcours avec l’algorithme
+		                    de Gale-Shapley. Étude de stabilité, utilité, équité
+		                    et modèles PLNE avec Gurobi.
+		                </p>
+
+		                <a
+		                    href="https://github.com/Jalil192/gale-shapley-master-affectation"
+		                    target="_blank"
+		                    rel="noopener noreferrer"
+		                    class="btn btn-primary"
+		                >
+		                    Voir le projet
+		                </a>
+		            </div>
+		        </div>
+		    </div>
+
+		    <!-- Projet 7 : Fashion MNIST -->
+		    <div class="col-md-6 col-lg-4">
+		        <div class="card h-100">
+		            <img
+		                src="éléments/stats.jpg"
+		                class="img-fluid card-img-top"
+		                alt="Projet Fashion MNIST"
+		            >
+
+		            <div class="card-body">
+		                <h5 class="card-title">Fashion MNIST - IA & Data Science</h5>
+
+		                <p class="card-text">
+		                    Classification d’images de vêtements avec Python.
+		                    Comparaison du k-NN, du perceptron, des arbres de décision,
+		                    de l’ACP et du clustering.
+		                </p>
+
+		                <div class="d-flex gap-2 flex-wrap mt-auto">
+		                    <a
+		                        href="https://github.com/Jalil192/fashion-mnist-ia-data-science"
+		                        target="_blank"
+		                        rel="noopener noreferrer"
+		                        class="btn btn-primary"
+		                    >
+		                        Voir le projet
+		                    </a>
+
+		                    <a
+		                        href="https://github.com/Jalil192/fashion-mnist-ia-data-science/blob/main/poster.pdf"
+		                        target="_blank"
+		                        rel="noopener noreferrer"
+		                        class="btn btn-primary"
+		                    >
+		                        Voir le poster
+		                    </a>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+
+		    <!-- Projet 8 : TME statistiques et probabilités -->
+		    <div class="col-md-6 col-lg-4">
+		        <div class="card h-100">
+		            <img
+		                src="éléments/machinelearning.jpg"
+		                class="img-fluid card-img-top"
+		                alt="TME statistiques et probabilités"
+		            >
+
+		            <div class="card-body">
+		                <h5 class="card-title">TME - IA, probabilités & Data Science</h5>
+
+		                <p class="card-text">
+		                    Travaux en Python autour des probabilités, des simulations
+		                    de Monte-Carlo, du Reversi, des agents MCTS, des microfermes
+		                    et de la classification probabiliste.
+		                </p>
+
+		                <a
+		                    href="https://github.com/Jalil192/tmes-ia-probabilites-data-science"
+		                    target="_blank"
+		                    rel="noopener noreferrer"
+		                    class="btn btn-primary"
+		                >
+		                    Voir le projet
+		                </a>
+		            </div>
+		        </div>
+		    </div>
+
+		</div>
+	    </div>
+</section>
+
+    <!-- Compétences -->
+    <section id="skills" class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Mes Compétences</h2>
+
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6 text-center">
+                    <div class="skill-card p-3 border rounded shadow-sm">
+                        <div class="skill-icon js-icon"></div>
+                        <h4 class="mt-3">JavaScript</h4>
+                        <p>Ajout d'interactivité et de dynamisme aux applications web.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 text-center">
+                    <div class="skill-card p-3 border rounded shadow-sm">
+                        <div class="skill-icon css-icon"></div>
+                        <h4 class="mt-3">CSS</h4>
+                        <p>Création de designs modernes et responsives.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 text-center">
+                    <div class="skill-card p-3 border rounded shadow-sm">
+                        <div class="skill-icon html-icon"></div>
+                        <h4 class="mt-3">HTML</h4>
+                        <p>Structure et contenu sémantiques des pages web.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 text-center">
+                    <div class="skill-card p-3 border rounded shadow-sm">
+                        <div class="skill-icon python-icon"></div>
+                        <h4 class="mt-3">Python</h4>
+                        <p>Développement orienté objet, data science et automatisation.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 text-center">
+                    <div class="skill-card p-3 border rounded shadow-sm">
+                        <div class="skill-icon java-icon"></div>
+                        <h4 class="mt-3">Java</h4>
+                        <p>Programmation orientée objet et applications robustes.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 text-center">
+                    <div class="skill-card p-3 border rounded shadow-sm">
+                        <div class="skill-icon c-icon"></div>
+                        <h4 class="mt-3">C</h4>
+                        <p>Programmation bas-niveau, pointeurs et gestion mémoire.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 text-center">
+                    <div class="skill-card p-3 border rounded shadow-sm">
+                        <div class="skill-icon sql-icon"></div>
+                        <h4 class="mt-3">SQL</h4>
+                        <p>Manipulation de données, bases relationnelles et requêtes SQL.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 text-center">
+                    <div class="skill-card p-3 border rounded shadow-sm">
+                        <div class="skill-icon data-icon"></div>
+                        <h4 class="mt-3">Data</h4>
+                        <p>NumPy, Pandas, scikit-learn, Jupyter Notebook, Excel et Power BI.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 text-center">
+                    <div class="skill-card p-3 border rounded shadow-sm">
+                        <div class="skill-icon linux-icon"></div>
+                        <h4 class="mt-3">Outils</h4>
+                        <p>Git, Linux, Bash, VS Code, IntelliJ, Makefile et Wireshark.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="about" class="about-section">
+    <div class="container">
+        <div class="about-header text-center">
+            <span class="section-tag">À propos</span>
+            <h2>Mon profil</h2>
+            <p>
+                Étudiant en informatique, je construis mon parcours autour du développement,
+                de la data, de l’IA et de la cybersécurité.
+            </p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-card about-main-card">
+                <div class="about-avatar">
+                    <img src="éléments/avatar1.avif" alt="avatar de Jalil Keddara">
+                </div>
+
+                <h3>Jalil Keddara</h3>
+
+                <p class="about-short">
+                    L3 Informatique à Sorbonne Université. Futur étudiant en cycle ingénieur à l’ESILV,
+                    je recherche une alternance de 36 mois en IA, data ou cybersécurité.
+                </p>
+
+                <div class="about-tags">
+                    <span>Python</span>
+                    <span>Data</span>
+                    <span>IA</span>
+                    <span>Cybersécurité</span>
+                    <span>Web</span>
+                </div>
+
+                <div class="about-actions">
+                    <a href="éléments/cv.pdf" download class="about-btn primary-btn">Télécharger mon CV</a>
+                    <a href="#contact" class="about-btn secondary-btn">Me contacter</a>
+                </div>
+            </div>
+
+            <div class="about-card about-details-card">
+                <div class="accordion-box active">
+		    <button class="accordion-btn" type="button">
+			<span>🎓 Formation</span>
+			<span class="accordion-icon">−</span>
+		    </button>
+
+		    <div class="accordion-content">
+			<p>
+			    <strong>ESILV — Rentrée 2026</strong><br>
+			    Admis en cursus ingénieur avec une spécialisation en Data & IA
+			    et en MSc Data Science & Intelligence Artificielle.
+			    Mon choix de parcours dépendra de l’alternance obtenue.
+			</p>
+			<p>
+			    <strong>Licence Informatique</strong><br>
+			    Sorbonne Université — septembre 2023 à juillet 2026.
+			</p>
+
+			<p>
+			    Cours suivis : algorithmique, bases de données, systèmes d’exploitation,
+			    réseaux, intelligence artificielle, data science, génie logiciel,
+			    développement web et mathématiques.
+			</p>
+
+			<p>
+			    <strong>Baccalauréat scientifique — Mention Bien</strong><br>
+			    Lycée Paul Langevin, Suresnes — 2023.
+			</p>
+		    </div>
+		</div>
+
+                <div class="accordion-box">
+                    <button class="accordion-btn" type="button">
+                        <span>💼 Expériences professionnelles</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+
+                    <div class="accordion-content">
+                        <p>
+                            <strong>Intérim SIDE</strong> — mai 2025 à aujourd’hui<br>
+                            Préparation de commandes, manutention et libre-service.
+                        </p>
+                        <p>
+                            <strong>Stage - Joke’r Transport</strong> — mai 2025 à juillet 2025<br>
+                            Inventaire, réorganisation d’une base de données interne et optimisation d’outils de suivi.
+                        </p>
+                        <p>
+                            <strong>Tuteur en mathématiques</strong> — novembre 2024 à aujourd’hui<br>
+                            Accompagnement d’élèves de la primaire jusqu’à la terminale.
+                        </p>
+                        <p>
+                            <strong>Employé polyvalent - McDonald’s</strong> — août 2024 à octobre 2024<br>
+                            Accueil client, encaissement, prise de commande et préparation en cuisine.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-box">
+                    <button class="accordion-btn" type="button">
+                        <span>🧠 Ce que je recherche</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+
+                    <div class="accordion-content">
+                        <p>
+                            Je recherche une alternance de 36 mois dans un environnement technique,
+                            avec des missions concrètes en développement, data, IA ou cybersécurité.
+                        </p>
+                        <p>
+                            Je souhaite progresser sur des projets utiles, bien encadrés, tout en apportant
+                            mon sérieux, ma curiosité et ma capacité à apprendre vite.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="accordion-box">
+                    <button class="accordion-btn" type="button">
+                        <span>⚡ Centres d’intérêt</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+
+                    <div class="accordion-content">
+                        <p>
+                            En dehors des cours, je m’intéresse au football, aux jeux vidéo, au cinéma
+                            et aux projets tech personnels.
+                        </p>
+                        <p>
+                            Ces activités m’aident à rester créatif, discipliné et à garder un bon équilibre.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact -->
+    <section id="contact" class="p-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Formulaire de Contact</h2>
+            <div class="quick-contact">
+	    	<a href="mailto:keddara.ja@gmail.com" class="quick-contact-item">
+			<span class="quick-contact-icon">✉️</span>
+			<div>
+			    <strong>Email</strong>
+			    <p>keddara.ja@gmail.com</p>
+			</div>
+	       </a>
+	    	<a href="tel:+33769381406" class="quick-contact-item">
+			<span class="quick-contact-icon">📞</span>
+			<div>
+		    		<strong>Téléphone</strong>
+		    		<p>07 69 38 14 06</p>
+			</div>
+	       </a>
+	</div>
+    <p class="contact-transition-text">
+    Ou, si vous préférez, vous pouvez aussi m’envoyer un message directement depuis le site.
+    </p>
+    <form id="contactForm" action="https://formspree.io/f/meenyegw" method="POST">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 mb-3">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" class="form-control" required>
+            <div class="error" id="nomError"></div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 mb-3">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" class="form-control" required>
+            <div class="error" id="prenomError"></div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 mb-3">
+            <label for="mail">Email :</label>
+            <input type="email" id="mail" name="email" placeholder="Votre email" class="form-control" required>
+            <div class="error" id="mailError"></div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 mb-3">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message" class="form-control" required></textarea>
+            <div class="error" id="messageError"></div>
+        </div>
+    </div>
+
+    <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio de Jalil">
+
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+</form>
+            
+            <div class="mt-5">
+                <h3 class="text-center mb-3">Mes Réseaux Sociaux</h3>
+
+                <div class="social-links d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="https://github.com/Jalil192" class="btn-social github" target="_blank" aria-label="GitHub">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/jalil-keddara-0895ab334/" class="btn-social linkedin" target="_blank" aria-label="LinkedIn">
+                        LinkedIn
+                    </a>
+
+                    <a href="https://www.instagram.com/jalil92.1/" class="btn-social instagram" target="_blank" aria-label="Instagram">
+                        Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-center text-white py-4">
+        <div class="container">
+            <div class="footer-links mb-3">
+                <a href="#home" class="text-white mx-2">Accueil</a>
+                <a href="#projects" class="text-white mx-2">Projets</a>
+                <a href="#skills" class="text-white mx-2">Compétences</a>
+                <a href="#about" class="text-white mx-2">À propos</a>
+                <a href="#contact" class="text-white mx-2">Contact</a>
+            </div>
+
+            <p>&copy; 2026 Jalil Keddara. Tous droits réservés.</p>
+
+            <p>
+                <small>
+                    <a href="mentions_x_confidentialité/mentions-legales.html" target="_blank"class="text-white">Mentions légales</a> 
+		    <a href="mentions_x_confidentialité/politique-confidentialite.html" target="_blank" class="text-white">Politique de confidentialité</a>
+                </small>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS local -->
+    <script src="index.js"></script>
+</body>
+</html>
